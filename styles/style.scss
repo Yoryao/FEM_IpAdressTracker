@@ -137,4 +137,69 @@ main {
    
 }
 
+@media screen and ( width > 400px) {
+    
+    
+        h1 {
+            font-size: 4em;
+            color: #fff;
+        }
 
+    
+    #inputContainer {
+        width: 40%;
+        height: 30vh;
+    
+        #ipInput {
+            width: 90%;
+            padding-left: 5%;
+      
+            &::placeholder {
+                font-size: 1.5rem;
+            }
+        }
+    
+        #searchBtn {
+            width: 10%;
+          
+        }
+   
+    }
+    
+    
+    .resultContainer {
+        flex-direction: row;
+        justify-content: space-evenly;
+        height: 40vh;
+        
+        .resultBlock {
+         
+            height: 100%;
+            width: 25%;
+            padding-left: 5%;
+            align-items: baseline;
+            justify-content: space-evenly;
+        }
+        
+        h3 {
+            margin-top: 5%;
+            font-size: 1rem;
+            height: 25%;
+    
+            text-align: left;
+            
+        }
+        
+        h2 {
+    
+            font-size: 1.5em;
+            height: 70%;
+            text-align: left;
+        }
+            .even {
+                box-shadow: 1px 0px gray;
+                box-shadow: -1px 0px gray;
+            }
+
+    }    
+}
