@@ -18,11 +18,11 @@ function printIp() {
         let locationState = objeto.location.region; 
         let isp = objeto.isp;
         let timeZone = objeto.location.timezone;
-        
+        console.log("ipValue: " + ipValue)
         
         document.getElementById("ipPrinted").innerText = ip;
         document.getElementById("locationPrinted").innerText = `${locationCountry} , ${locationState}`;
-        document.getElementById("timeZonePrinted").innerText = timeZone;
+        document.getElementById("timeZonePrinted").innerText =`UTC ${timeZone}`;
         document.getElementById("ispPrinted").innerText = isp;
         
     }

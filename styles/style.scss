@@ -19,14 +19,11 @@
 
 .w400 {
     font-weight: 400;
-    color: colors.$darkGray;
-}
+ }
 .w500 {
     font-weight: 500;
-    color: colors.$gray;
 }
 .w700 {
-    color: colors.$darkGray;
     font-weight: 700;
 }
 
@@ -42,6 +39,7 @@
     height: 40vh;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     z-index: -1;
     background-image: url("../images/pattern-bg.png");
 }
@@ -60,27 +58,40 @@ body {
 }
 
 main {
-    
-    justify-content: center;
+    height: 100vh;    
     align-items: center;
-    border: 1px solid red;
+
+    h1 {
+        padding: 7% ;
+        font-size: 2rem;
+        color: #fff !important;
+        font-weight: 500;
+    }
 }
 
 #inputContainer {
     width: 85%;
     border-radius: 15px;
-    
-    height: 3rem;
+    height: 4rem;
 
     #ipInput {
         border: none;
-        width: 90%;
+        width: 82%;
         border-top-left-radius:15px;
-        border-bottom-left-radius: 15px ;
+        border-bottom-left-radius: 15px;
+        font-size: 1.5rem;
+        letter-spacing: 1px;
+        padding-left: 10%;
+        color: colors.$darkGray;
+        font-weight: 600;
+  
+        &::placeholder {
+            font-size: .7rem;
+        }
     }
 
     #searchBtn {
-        width: 15%;
+        width: 18%;
         border: none;
         background-color: #000;
         border-top-right-radius:15px;
@@ -93,15 +104,35 @@ main {
 
 .resultContainer {
     margin: 10%;
-    border: 1px solid red;
     border-radius: 15px;
     width: 85%;
+    height: 40vh;
     background-color: #fff;
-    justify-content: center;
-    align-items: center;
     text-align: center;
-}
-
-.resultBlock {
-    margin: 10px auto;
+    
+    .resultBlock {
+        height: 25%;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    
+    h3 {
+        color: colors.$gray;
+        font-size: .8rem;
+        height: 20%;
+        
+    }
+    
+    h2 {
+        color: colors.$darkGray;
+        font-size: 1.3rem;
+        height: 30%;
+        font-weight: 500;
+    
+        
+    }
+    .resultBlock:last-child {
+        margin-bottom: 10px;  
+    }
+   
 }
