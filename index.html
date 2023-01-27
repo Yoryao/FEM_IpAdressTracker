@@ -17,30 +17,30 @@
   <main class="flexCol font">
   <h1 class="w700">IP Address Tracker</h1>
   <div id="inputContainer" class="flexRow">
-    <input id="ipInput" type="text" name="ipAddres" id="ipAddressID">
-    <button id="searchBtn"><img src="./images/icon-arrow.svg" alt="follow advance arrow"></button>
+    <input id="ipInput" type="text" name="ipAddres" value="8.8.8.8">
+    <button id="searchBtn" onclick="printIp()"><img src="./images/icon-arrow.svg" alt="follow advance arrow"></button>
   </div>
 
   <div class="resultContainer flexCol">
     <div class="resultBlock">
       <h3 class="w500">IP ADDRESS</h3>
-      <h2 class="w400">xxxx</h2>
+      <h2 id="ipPrinted" class="w400">xxxx</h2>
     </div>
     <div class="resultBlock">
       <h3 class="w500">LOCATION</h3>
-      <h2 class="w400">yyyy</h2>
+      <h2 id="locationPrinted" class="w400">yyyy</h2>
     </div>
     <div class="resultBlock">
       <h3 class="w500">TIMEZONE</h3>
-      <h2 class="w400">zzzz</h2>
+      <h2 id="timeZonePrinted" class="w400">zzzz</h2>
     </div>
     <div class="resultBlock">
       <h3 class="w500">ISP</h3>
-      <h2 class="w400">0000</h2>
+      <h2 id="ispPrinted" class="w400">0000</h2>
     </div>
   </div>
 </main>
 <div class="mapImage"></div>
-
+<script src="./app.js"></script>
 </body>
 </html>
