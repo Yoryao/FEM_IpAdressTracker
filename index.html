@@ -9,38 +9,46 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles/style.css">  
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+crossorigin=""/>
+ <!-- Make sure you put this AFTER Leaflet's CSS -->
+ <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+     integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+     crossorigin=""></script>
 <title>Frontend Mentor | IP Address Tracker</title>
 
 </head>
 <body class="flexCol">
 <div class="upperBackgroundImage"></div>
   <main class="flexCol font">
-  <h1 class="w700">IP Address Tracker</h1>
+  <h1 class="">IP Address Tracker</h1>
   <div id="inputContainer" class="flexRow">
-    <input id="ipInput" type="text" name="ipAddres" value="8.8.8.8">
-    <button id="searchBtn" onclick="printIp()"><img src="./images/icon-arrow.svg" alt="follow advance arrow"></button>
+    <input id="ipInput" type="text" class="w700" name="ipAddres" placeholder="Search for any Ip address or domain">
+    <button id="searchBtn" onclick="getIp()"><img src="./images/icon-arrow.svg" alt="follow advance arrow"></button>
   </div>
 
   <div class="resultContainer flexCol">
-    <div class="resultBlock">
-      <h3 class="w500">IP ADDRESS</h3>
-      <h2 id="ipPrinted" class="w400">xxxx</h2>
+    <div class="resultBlock flexCol">
+      <h3 class="w500 resultItem">IP ADDRESS</h3>
+      <h2 id="ipPrinted" class="w400 resultItem"></h2>
     </div>
-    <div class="resultBlock">
-      <h3 class="w500">LOCATION</h3>
-      <h2 id="locationPrinted" class="w400">yyyy</h2>
+    <div class="resultBlock flexCol">
+      <h3 class="w500 resultItem">LOCATION</h3>
+      <h2 id="locationPrinted" class="w400 resultItem"></h2>
     </div>
-    <div class="resultBlock">
-      <h3 class="w500">TIMEZONE</h3>
-      <h2 id="timeZonePrinted" class="w400">zzzz</h2>
+    <div class="resultBlock flexCol">
+      <h3 class="w500 resultItem">TIMEZONE</h3>
+      <h2 id="timeZonePrinted" class="w400 resultItem"></h2>
     </div>
-    <div class="resultBlock">
-      <h3 class="w500">ISP</h3>
-      <h2 id="ispPrinted" class="w400">0000</h2>
+    <div class="resultBlock flexCol">
+      <h3 class="w500 resultItem">ISP</h3>
+      <h2 id="ispPrinted" class="w400 resultItem"></h2>
     </div>
   </div>
 </main>
 <div class="mapImage"></div>
-<script src="./app.js"></script>
+<script  src="./app.js"></script>
+
 </body>
 </html>
